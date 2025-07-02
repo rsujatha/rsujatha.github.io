@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Sujatha Ramakrishnan Personal webpage</title>
     <style>
         body {
@@ -27,16 +27,47 @@
         ul {
             list-style: none;
             padding: 0;
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: space-between;
         }
         li {
-            margin-bottom: 10px;
+            flex: 1 1 250px;
+            background: #fafafa;
+            border-radius: 8px;
+            padding: 15px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.05);
+            text-align: center;
+            transition: box-shadow 0.3s;
+        }
+        li:hover {
+            box-shadow: 0 0 15px rgba(0,86,179,0.3);
         }
         a {
             color: #007bff;
             text-decoration: none;
+            display: inline-block;
+            margin-top: 10px;
+            font-weight: bold;
         }
         a:hover {
             text-decoration: underline;
+        }
+        .thumbnail {
+            width: 100%;
+            height: auto;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+        .thumbnail:hover {
+            transform: scale(1.05);
+        }
+        .description {
+            margin-top: 8px;
+            font-size: 0.9rem;
+            color: #555;
         }
     </style>
 </head>
@@ -48,13 +79,25 @@
         <h2>My Projects:</h2>
         <ul>
             <li>
-                <a href="https://rsujatha.github.io/LUX/" target="_blank">LUX Project</a> - A description of your LUX project.
+                <a href="https://rsujatha.github.io/LUX/" target="_blank" title="LUX Project">
+                    <img src="images/lux-thumb.jpg" alt="LUX Project Thumbnail" class="thumbnail" />
+                    LUX Project
+                </a>
+                <p class="description">A description of your LUX project.</p>
             </li>
             <li>
-                <a href="https://github.com/rsujatha/zeldovich-approx" target="_blank">zeldovich-approx</a> - Code for Zeldovich approximation (Precursor to N-body Simulation).
+                <a href="https://github.com/rsujatha/zeldovich-approx" target="_blank" title="zeldovich-approx">
+                    <img src="images/zeldovich-thumb.jpg" alt="zeldovich-approx Thumbnail" class="thumbnail" />
+                    zeldovich-approx
+                </a>
+                <p class="description">Code for Zeldovich approximation (Precursor to N-body Simulation).</p>
             </li>
             <li>
-                <a href="https://demonstrations.wolfram.com/StochasticDiploidModelForGeneFrequencyInAPopulation/" target="_blank">Polymorphism in a population</a> - A Mathematica demonstration for a stochastic model that explains the conditions required for existence of genetic variation in a population.
+                <a href="https://demonstrations.wolfram.com/StochasticDiploidModelForGeneFrequencyInAPopulation/" target="_blank" title="Polymorphism in a population">
+                    <img src="images/polymorphism-thumb.jpg" alt="Polymorphism Thumbnail" class="thumbnail" />
+                    Polymorphism in a population
+                </a>
+                <p class="description">A Mathematica demonstration for a stochastic model that explains the conditions required for existence of genetic variation in a population.</p>
             </li>
         </ul>
 
