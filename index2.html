@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sujatha Ramakrishnan Personal webpage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1, h2 {
+            color: #0056b3;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        li {
+            flex: 1 1 250px;
+            background: #fafafa;
+            border-radius: 8px;
+            padding: 15px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.05);
+            text-align: center;
+            transition: box-shadow 0.3s;
+        }
+        li:hover {
+            box-shadow: 0 0 15px rgba(0,86,179,0.3);
+        }
+        a {
+            color: #007bff;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .thumbnail {
+            width: 100%;
+            height: auto;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+        .thumbnail:hover {
+            transform: scale(1.05);
+        }
+        .description {
+            margin-top: 8px;
+            font-size: 0.9rem;
+            color: #555;
+        }
+        .video-container {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            height: 0;
+            overflow: hidden;
+            border-radius: 6px;
+            margin-bottom: 10px;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Sujatha Ramakrishnan's GitHub Pages</h1>
+        <p></p>
+
+        <h2>My Visualisation Projects:</h2>
+        <ul>
+            <li>
+                <a href="https://rsujatha.github.io/lc-view/" target="_blank" title="H-alpha galaxies">
+                    <img src="images/galaxiesiinalc.png" alt="LUX Project Thumbnail" class="thumbnail" />
+                    H-alpha galaxies in a Lightcone Viewer
+                </a>
+                <p class="description">3D visualisation of mock H-alpha galaxies in a 50 square degree deep survey.</p>
+            </li>
+            <li>
+                <a href="https://rsujatha.github.io/LUX/" target="_blank" title="LUX Project">
+                    <img src="images/screenshot_interactive.png" alt="LUX Project Thumbnail" class="thumbnail" />
+                    Lux: Lightcone Utility for Dark Matter Haloes
+                </a>
+                <p class="description">Optimal Angle Finder: To construct synthetic lightcones for galaxy surveys.</p>
+            </li>
+            <li>
+                <a href="https://github.com/rsujatha/zeldovich-approx" target="_blank" title="zeldovich approximation">
+                    <img src="images/cosmicweb.png" alt="zeldovich-approx Thumbnail" class="thumbnail" />
+                    zeldovich-approx
+                </a>
+                <p class="description">Code for Zeldovich approximation (Precursor to N-body Simulation).</p>
+            </li>
+            <li>
+                <a href="https://demonstrations.wolfram.com/StochasticDiploidModelForGeneFrequencyInAPopulation/" target="_blank" title="Polymorphism in a population">
+                    <img src="images/diploid.png" alt="Polymorphism Thumbnail" class="thumbnail" />
+                    Polymorphism in a population
+                </a>
+                <p class="description">A Mathematica demonstration for a stochastic model that explains the conditions required for existence of genetic variation in a population.</p>
+            </li>
+            <li>
+                <div class="video-container">
+                    <iframe 
+                        src="https://www.youtube.com/watch?v=WiWIXhUgaec&t=5s" 
+                        title="YouTube video player" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        referrerpolicy="strict-origin-when-cross-origin" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+                <p class="description">An example YouTube video embedded on the page.</p>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
