@@ -69,6 +69,23 @@
             font-size: 0.9rem;
             color: #555;
         }
+           .video-container {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            height: 0;
+            overflow: hidden;
+            border-radius: 6px;
+            margin-bottom: 10px;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
     </style>
 </head>
 <body>
@@ -105,6 +122,19 @@
                     Polymorphism in a population
                 </a>
                 <p class="description">A Mathematica demonstration for a stochastic model that explains the conditions required for existence of genetic variation in a population.</p>
+            </li>
+                        <li>
+                <div class="video-container">
+                    <iframe 
+                        src="https://www.youtube.com/watch?v=WiWIXhUgaec&t=5s" 
+                        title="Cosmology From Home" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        referrerpolicy="strict-origin-when-cross-origin" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+                <p class="description">Cosmology From Home Video.</p>
             </li>
         </ul>
      </div>
